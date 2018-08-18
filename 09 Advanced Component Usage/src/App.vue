@@ -5,10 +5,20 @@
                 <!-- ส่งค่าที่ชื่อ quote ไปให้่ Quete component -->
                <!-- <app-quote qoute="A wonderful qoute!"></app-quote> -->
                <!-- passing html tag with slot -->
-               <app-quote>
+
+                <button @click="selectedComponent = 'appQuote'">Quote</button>
+                <button @click="selectedComponent = 'appAuthor'">Author</button>
+                <button @click="selectedComponent = 'appNew'">New</button>
+               <hr>
+               <p>{{ selectedComponent }}</p>
+               <component :is="selectedComponent">
+                   <p>Default Content</p>
+               </component>
+               <!-- <app-quote>
                     <h2 slot="title">{{ qouteTitle }}</h2>
                     <p>wonderful Quote</p>
-               </app-quote>               
+               </app-quote> -->
+                            
             </div>
         </div>
     </div>
@@ -16,14 +26,19 @@
 
 <script>
     import Quote from './components/Quote.vue'
+    import { Author } from './components/Author.vue'
+    import { New } from './components/New.vue'
     export default {
         data: function() {
             return {
-                qouteTitle: 'The Quote'
+                qouteTitle: 'The Quote',
+                selectedComponent: 'appQuote'
             }
         },
         components: {
-            'app-quote': Quote 
+            appQuote: Quote,
+            appAuthor: Author,
+            appNew: New
         }
     }
 </script>
