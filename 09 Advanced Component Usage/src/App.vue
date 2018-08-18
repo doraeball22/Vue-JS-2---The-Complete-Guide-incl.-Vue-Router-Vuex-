@@ -26,27 +26,27 @@
 </template>
 
 <script>
-    import Quote from './components/Quote.vue'
-    import Author from './components/Author.vue'
-    import New from './components/New.vue'
-    export default {
-        data: function() {
-            return {
-                qouteTitle: 'The Quote',
-                selectedComponent: 'appQuote'
-            }
-        },
-        components: {
-            appQuote: Quote,
-            appAuthor: Author,
-            appNew: New
-        }
+import Quote from "./components/Quote.vue"
+import Author from "./components/Author.vue"
+import New from "./components/New.vue"
+export default {
+  data: function() {
+    return {
+      qouteTitle: "The Quote",
+      selectedComponent: "appQuote"
     }
+  },
+  components: {
+    appQuote: Quote,
+    appAuthor: Author,
+    appNew: New
+  }
+}
 </script>
 
 <style>
-    /* การประกาศสไตร์ที่อยู่นอก scoped จะสามารภถ่ายถอดไปยังคอมโพเนนต์ลูกได้ */
-    h2 {
-        color: red;
-    }
+/* การประกาศสไตร์ที่อยู่นอก scoped จะสามารภถ่ายถอดไปยังคอมโพเนนต์ลูกได้ */
+h2 {
+  color: red;
+}
 </style>
