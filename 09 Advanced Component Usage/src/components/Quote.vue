@@ -1,12 +1,15 @@
 <template>
     <div>        
-        <p>{{ qoute }}</p>
+        <!-- <p>{{ qoute }}</p> -->
+
+        <!-- use slot to recieved html tag -->
+        <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
-      props: ['qoute']
+    //   props: ['qoute']
     }
     
 </script>
