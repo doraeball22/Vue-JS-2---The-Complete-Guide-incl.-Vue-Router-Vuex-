@@ -17,8 +17,7 @@
                <!-- <app-quote>
                     <h2 slot="title">{{ qouteTitle }}</h2>
                     <p>wonderful Quote</p>
-               </app-quote> -->
-                            
+               </app-quote> -->               
             </div>
         </div>
     </div>
@@ -26,8 +25,8 @@
 
 <script>
     import Quote from './components/Quote.vue'
-    import { Author } from './components/Author.vue'
-    import { New } from './components/New.vue'
+    import Author from './components/Author.vue'
+    import New from './components/New.vue'
     export default {
         data: function() {
             return {
