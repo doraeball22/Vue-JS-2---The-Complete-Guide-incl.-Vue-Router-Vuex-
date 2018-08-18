@@ -7,7 +7,7 @@
                <!-- passing html tag with slot -->
                <app-quote>
                     <h2 slot="title">{{ qouteTitle }}</h2>
-                    <p slot="content">wonderful Quote</p>
+                    <p>wonderful Quote</p>
                </app-quote>               
             </div>
         </div>
