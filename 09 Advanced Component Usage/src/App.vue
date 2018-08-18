@@ -6,7 +6,7 @@
                <!-- <app-quote qoute="A wonderful qoute!"></app-quote> -->
                <!-- passing html tag with slot -->
                <apo-quote>
-                    <h2>The Quote</h2>
+                    <h2>{{ qouteTitle }}</h2>
                     <p>wonderful Quote</p>
                </apo-quote>               
             </div>
@@ -17,6 +17,11 @@
 <script>
     import Quote from './components/Quote.vue'
     export default {
+        data: function() {
+            return {
+                qouteTitle: 'The Quote'
+            }
+        },
         components: {
             'app-quote': Quote 
         }
@@ -24,4 +29,8 @@
 </script>
 
 <style>
+    /* การประกาศสไตร์ที่อยู่นอก scoped จะสามารภถ่ายถอดไปยังคอมโพเนนต์ลูกได้ */
+    h2 {
+        color: red;
+    }
 </style>

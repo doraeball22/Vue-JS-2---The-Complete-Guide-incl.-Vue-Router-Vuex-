@@ -9,7 +9,7 @@
 
 <script>
     export default {
-    //   props: ['qoute']
+    //   props: ['qoute'] 
     }
     
 </script>
@@ -22,4 +22,5 @@
         margin: 30px auto;
         text-align: center;
     }
+
 </style>
