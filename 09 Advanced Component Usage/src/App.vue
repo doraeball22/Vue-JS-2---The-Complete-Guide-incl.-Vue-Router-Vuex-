@@ -5,10 +5,10 @@
                 <!-- ส่งค่าที่ชื่อ quote ไปให้่ Quete component -->
                <!-- <app-quote qoute="A wonderful qoute!"></app-quote> -->
                <!-- passing html tag with slot -->
-               <apo-quote>
-                    <h2>{{ qouteTitle }}</h2>
-                    <p>wonderful Quote</p>
-               </apo-quote>               
+               <app-quote>
+                    <h2 slot="title">{{ qouteTitle }}</h2>
+                    <p slot="content">wonderful Quote</p>
+               </app-quote>               
             </div>
         </div>
     </div>

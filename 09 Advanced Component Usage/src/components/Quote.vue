@@ -3,7 +3,15 @@
         <!-- <p>{{ qoute }}</p> -->
 
         <!-- use slot to recieved html tag -->
-        <slot></slot>
+        <!-- <slot></slot> -->
+
+        <div class="title">
+            <slot name="title"></slot>
+        </div>
+        <hr>
+        <div>
+            <slot name="content"></slot>
+        </div>
     </div>
 </template>
 
@@ -21,6 +29,10 @@
         padding: 30px;
         margin: 30px auto;
         text-align: center;
+    }
+
+    .title {
+        font-style: italic;
     }
 
 </style>
