@@ -9,24 +9,25 @@
 </template>
 
 <script>
-    export default {
-        // props: ['quotes'] not need we use slot
-    }    
+export default {
+    // not need we use slot
+	props: ['quote'] 
+}
 </script>
 
 <style>
-    .panel-body {
-        font-family: 'Arizonia', cursive;
-        font-size: 24px;
-        color: #6e6e6e;
-    }
+.panel-body {
+	font-family: 'Arizonia', cursive;
+	font-size: 24px;
+	color: #6e6e6e;
+}
 
-    .quote {
-        cursor: pointer;
-    }
+.quote {
+	cursor: pointer;
+}
 
-    .quote:hover {
-        background-color: #ffe2e2;
-    }
+.quote:hover {
+	background-color: #ffe2e2;
+}
 </style>
 

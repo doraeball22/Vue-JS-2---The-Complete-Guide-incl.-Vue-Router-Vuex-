@@ -1,15 +1,20 @@
 <template>
-    <div>
-
+    <div class="row">
+        <!-- don't forgot v-bind:key not key it will be not render-->
+        <app-quote v-for="(quote, index) in quotes" :key="index">{{ quote }}</app-quote>
     </div>    
 </template>
 
 <script>
-    export default {
-      
-    }    
+import Quote from './Quote.vue'
+export default {
+	props: ['quotes'],
+	components: {
+		appQuote: Quote
+    },
+
+}
 </script>
 
 <style>
-
 </style>

@@ -1,17 +1,22 @@
 <template>
     <div class="container">
-    
+        <app-quote-grid :quotes="quotes"></app-quote-grid>
     </div>
 </template>
 
 <script>
+import QuoteGrid from './components/QuoteGrid.vue'
 export default {
-  data: function() {
-    return {
-      quote: ["Just a Quote to see something"],
-      maxQuotes: 10
-    }
-  }
+	// data เป็นฟังก์ชั่นที่ return object
+	data: function() {
+		return {
+			quotes: ['Just a Quote to see something', 'second quote'],
+			maxQuotes: 10
+		}
+	},
+	components: {
+		appQuoteGrid: QuoteGrid
+	}
 }
 </script>
 
