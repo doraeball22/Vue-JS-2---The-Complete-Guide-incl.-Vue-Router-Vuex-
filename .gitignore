@@ -37,6 +37,7 @@ selenium-debug.log
 # visual studio code
 .vscode
 
+yarn.lock
 
 
 
